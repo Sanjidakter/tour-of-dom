@@ -21,7 +21,7 @@
                 <li>Heaven</li>
             </ul>
             </section>
-            <section>
+            <section class="place-container">
                 <h1 id="song-name">My fav songs</h1>
                 <ul>
                     <li>Ultravoilence</li>
@@ -32,11 +32,9 @@
             <section>
                 <h1 id="places-title">Places I like to visit</h1>
                 <ul>
-                    <li>Naval 
-                        acedemy
-                    </li>
-                    <li>CRB</li>
-                    <li>vatiary</li>
+                    <li class="important-places">CRB</li>
+                    <li class="important-places">vatiary</li>
+                    <li class="important-places">Naval acedemy</li>
                 </ul>
             </section>
         </main>
@@ -53,14 +51,23 @@
         const liCollection = document.getElementsByTagName('li');
         for(const li of liCollection)
         {
-            console.log(li.innerText);
+            //console.log(li.innerText);
         }
 
         const allHeadings = document.getElementsByTagName('h1');
         for(const h1 of allHeadings)
         {
-            console.log(h1.innerText);
+            //console.log(h1.innerText);
         }
+        const places = document.getElementsByClassName('important-places');
+        for(const place of places)
+        {
+            console.log(place.innerText);
+        }
+        const songTitle = document.getElementById('song-name');
+        songTitle.innerText = 'My favourite song of Lana';
     </script>
 </body>
 </html>
+
+<!-- 3.10 min -->
