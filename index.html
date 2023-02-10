@@ -7,6 +7,11 @@
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+<style>
+    .song-container li{
+        color:darkblue;
+    }
+</style>
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
@@ -21,7 +26,7 @@
                 <li>Heaven</li>
             </ul>
             </section>
-            <section class="place-container">
+            <section class="song-container">
                 <h1 id="song-name">My fav songs</h1>
                 <ul>
                     <li>Ultravoilence</li>
@@ -48,6 +53,7 @@
         //         console.log(time,"study kortese");
         //     }
         // }
+        // option-1: getElementsByTagName
         const liCollection = document.getElementsByTagName('li');
         for(const li of liCollection)
         {
@@ -64,10 +70,17 @@
         {
             console.log(place.innerText);
         }
+        //Option 2: getElementById
         const songTitle = document.getElementById('song-name');
         songTitle.innerText = 'My favourite song of Lana';
+         //option 3:getElementsByClassName
+         //option 4: querySelector
+        //option 5: querySelectorAll
+        const someLi = document.querySelectorAll('.song-container li');
+        for(const li of someLi)
+        {
+            console.log(li.innerText);
+        }
     </script>
 </body>
 </html>
-
-<!-- 3.10 min -->
