@@ -17,26 +17,26 @@
         <h1>Welcome to my DOM</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ratione eius repudiandae eaque labore modi esse veniam suscipit tempora. Suscipit delectus fugit repudiandae amet, corporis similique harum libero atque!</p>
     </header>
-        <main>
+        <main id="main-container">
             <section>
-                <h1>My Awesome DOM learning start</h1>
+                <h1 class="heading-title">My Awesome DOM learning start</h1>
             <ul>
                 <li>Aesthatic SEt</li>
                 <li>Lana</li>
                 <li>Heaven</li>
             </ul>
             </section>
-            <section class="song-container">
-                <h1 id="song-name">My fav songs</h1>
+            <section id="song-container">
+                <h1 id="song-title" class="song-class">My fav songs</h1>
                 <ul>
                     <li>Ultravoilence</li>
                     <li>Watercolor Eyes</li>
                     <li>Body Electric</li>
                 </ul>
             </section>
-            <section>
+            <section id="places-container">
                 <h1 id="places-title">Places I like to visit</h1>
-                <ul>
+                <ul id="places-list">
                     <li class="important-places">CRB</li>
                     <li class="important-places">vatiary</li>
                     <li class="important-places">Naval acedemy</li>
@@ -45,6 +45,8 @@
         </main>
   
     <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/styleInJs.js"></script>
     <script>
         // const student = {
         //     name : 'ABUL',
@@ -68,7 +70,7 @@
         const places = document.getElementsByClassName('important-places');
         for(const place of places)
         {
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
         //Option 2: getElementById
         const songTitle = document.getElementById('song-name');
@@ -79,7 +81,7 @@
         const someLi = document.querySelectorAll('.song-container li');
         for(const li of someLi)
         {
-            console.log(li.innerText);
+           // console.log(li.innerText);
         }
     </script>
 </body>
